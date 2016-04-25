@@ -56,6 +56,13 @@ __process_scripts() {
 			exit 1
 		fi
 
+		firstcharofoutput=${output:0:1}
+		if [[ $firstcharofoutput == "!" ]] ; then
+			powerline_segment_modified=(${powerline_segment[0]} "197" "255" ${powerline_segment[3]})
+			powerline_segments[$segment_index]="${powerline_segment_modified[@]}"
+			output=${output:1}
+		fi
+
 		if [ -n "$output" ]; then
 			powerline_segment_contents[$segment_index]=" $output "
 		else
