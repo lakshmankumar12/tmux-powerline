@@ -1,1 +1,1 @@
-/drive_c/Users/lnara002/cygwin/github/tmux_status_notify/lk_notif_info.sh
+/Users/lakshman.narayanan/github/tmux-status-notify/lk_notif_info.sh
